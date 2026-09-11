@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-09-11T06:45:33.114360+00:00",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_tool.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_approved_answer_reduces_backlog (test_tool.ToolTests.test_approved_answer_reduces_backlog) ... ok\ntest_cli_example_exit_zero (test_tool.ToolTests.test_cli_example_exit_zero) ... ok\ntest_configured_mismatch_exit_one (test_tool.ToolTests.test_configured_mismatch_exit_one) ... ok\ntest_deterministic_immutable (test_tool.ToolTests.test_deterministic_immutable) ... ok\ntest_frozen_oracles (test_tool.ToolTests.test_frozen_oracles) ... ok\ntest_malformed_exit_two (test_tool.ToolTests.test_malformed_exit_two) ... ok\ntest_missing_field_exit_two (test_tool.ToolTests.test_missing_field_exit_two) ... ok\ntest_negative (test_tool.ToolTests.test_negative) ... ok\ntest_oversize_exit_two (test_tool.ToolTests.test_oversize_exit_two) ... ok\ntest_positive (test_tool.ToolTests.test_positive) ... ok\ntest_requires_all_dependencies (test_tool.ToolTests.test_requires_all_dependencies) ... ok\ntest_unknown (test_tool.ToolTests.test_unknown) ... ok\ntest_unknown_fields_exit_two (test_tool.ToolTests.test_unknown_fields_exit_two) ... ok\ntest_zero_effort_rejected (test_tool.ToolTests.test_zero_effort_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.201s\n\nOK\n",
+      "seconds": 0.2643382919486612
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-I",
+        "tool.py",
+        "--input",
+        "examples/input.json",
+        "--output",
+        "isolated-result.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.031845166929997504
+    }
+  ],
+  "test_count": 14,
+  "example_passed": true,
+  "source_sha256": "0f52b1981391eb7971ca0d9f47da09c144d4f7e64245088d5b9fa05edec67af4",
+  "scope": "Standalone local prototype on original synthetic cases; not full catalog acceptance"
+}

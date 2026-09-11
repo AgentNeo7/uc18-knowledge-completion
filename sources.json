@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Salesforce Agentforce Observability",
+    "url": "https://www.salesforce.com/agentforce/observability/",
+    "accessed": "2026-09-11",
+    "evidence_class": "externally_reported",
+    "note": "Salesforce markets session inspection and conversation clustering. Existing observability is the comparator; grouping failures alone is not differentiated.",
+    "performance_verified": false
+  },
+  {
+    "title": "LangSmith evaluation",
+    "url": "https://docs.langchain.com/langsmith/evaluation",
+    "accessed": "2026-09-11",
+    "evidence_class": "externally_reported",
+    "note": "LangSmith documents offline datasets and online evaluation. An authored local fixture check is narrower than representative comparative evaluation.",
+    "performance_verified": false
+  }
+]

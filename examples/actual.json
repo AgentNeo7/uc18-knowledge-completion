@@ -1,0 +1,28 @@
+{
+  "analysis_completed": true,
+  "comparative_limit": "Only authored synthetic mappings; no expert-time or held-out benefit established.",
+  "effort_assumption": 1,
+  "evidence_class": "simulated",
+  "frequency_baseline": {
+    "effort": 1,
+    "newly_resolvable": [
+      "s1"
+    ],
+    "selected_questions": [
+      "q1"
+    ]
+  },
+  "ignored_unapproved": [],
+  "newly_resolvable": [
+    "s1"
+  ],
+  "published_answers": 0,
+  "question_sources": {
+    "q1": "synthetic:gap1"
+  },
+  "selected_questions": [
+    "q1"
+  ],
+  "status": "question_plan",
+  "unsupported_scenarios": []
+}

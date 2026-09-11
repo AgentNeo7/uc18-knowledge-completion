@@ -1,0 +1,146 @@
+[
+  {
+    "expected": {
+      "newly_resolvable": [
+        "s1"
+      ],
+      "published_answers": 0,
+      "selected_questions": [
+        "q1"
+      ],
+      "status": "question_plan"
+    },
+    "input": {
+      "data": {
+        "approved_answers": [],
+        "budget": 1,
+        "questions": [
+          {
+            "effort": 1,
+            "id": "q1",
+            "source": "synthetic:gap1"
+          },
+          {
+            "effort": 2,
+            "id": "q2",
+            "source": "synthetic:gap2"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "s1",
+            "requires": [
+              "q1"
+            ],
+            "supported": true
+          },
+          {
+            "id": "s2",
+            "requires": [
+              "q1",
+              "q2"
+            ],
+            "supported": true
+          }
+        ]
+      },
+      "evidence_class": "simulated",
+      "spec_version": 1
+    },
+    "name": "positive"
+  },
+  {
+    "expected": {
+      "ignored_unapproved": [
+        "q1"
+      ],
+      "newly_resolvable": [],
+      "published_answers": 0,
+      "selected_questions": []
+    },
+    "input": {
+      "data": {
+        "approved_answers": [
+          {
+            "owner": "AI",
+            "question": "q1",
+            "revision": "draft",
+            "status": "proposed"
+          }
+        ],
+        "budget": 0,
+        "questions": [
+          {
+            "effort": 1,
+            "id": "q1",
+            "source": "synthetic:gap1"
+          },
+          {
+            "effort": 2,
+            "id": "q2",
+            "source": "synthetic:gap2"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "s1",
+            "requires": [
+              "q1"
+            ],
+            "supported": true
+          },
+          {
+            "id": "s2",
+            "requires": [
+              "q1",
+              "q2"
+            ],
+            "supported": true
+          }
+        ]
+      },
+      "evidence_class": "simulated",
+      "spec_version": 1
+    },
+    "name": "negative"
+  },
+  {
+    "expected": {
+      "selected_questions": [],
+      "status": "unsupported_scenarios",
+      "unsupported_scenarios": [
+        "s1"
+      ]
+    },
+    "input": {
+      "data": {
+        "approved_answers": [],
+        "budget": 1,
+        "questions": [
+          {
+            "effort": 1,
+            "id": "q1",
+            "source": "synthetic:gap1"
+          },
+          {
+            "effort": 2,
+            "id": "q2",
+            "source": "synthetic:gap2"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "s1",
+            "requires": [
+              "unmapped"
+            ],
+            "supported": false
+          }
+        ]
+      },
+      "evidence_class": "simulated",
+      "spec_version": 1
+    },
+    "name": "unknown"
+  }
+]

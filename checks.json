@@ -1,0 +1,63 @@
+{
+  "runtime": "3.13.14 (main, Jun 10 2026, 12:24:04) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "timestamp_utc": "2026-09-11T06:45:29.221458+00:00",
+  "evidence_class": "observed",
+  "scope": "local synthetic fixture execution only",
+  "attempts": [
+    {
+      "command": [
+        "/opt/homebrew/bin/python3.13",
+        "test_tool.py",
+        "-v"
+      ],
+      "cwd": "./tools/uc18",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_approved_answer_reduces_backlog (__main__.ToolTests.test_approved_answer_reduces_backlog) ... ok\ntest_cli_example_exit_zero (__main__.ToolTests.test_cli_example_exit_zero) ... ok\ntest_configured_mismatch_exit_one (__main__.ToolTests.test_configured_mismatch_exit_one) ... ok\ntest_deterministic_immutable (__main__.ToolTests.test_deterministic_immutable) ... ok\ntest_frozen_oracles (__main__.ToolTests.test_frozen_oracles) ... ok\ntest_malformed_exit_two (__main__.ToolTests.test_malformed_exit_two) ... ok\ntest_missing_field_exit_two (__main__.ToolTests.test_missing_field_exit_two) ... ok\ntest_negative (__main__.ToolTests.test_negative) ... ok\ntest_oversize_exit_two (__main__.ToolTests.test_oversize_exit_two) ... ok\ntest_positive (__main__.ToolTests.test_positive) ... ok\ntest_requires_all_dependencies (__main__.ToolTests.test_requires_all_dependencies) ... ok\ntest_unknown (__main__.ToolTests.test_unknown) ... ok\ntest_unknown_fields_exit_two (__main__.ToolTests.test_unknown_fields_exit_two) ... ok\ntest_zero_effort_rejected (__main__.ToolTests.test_zero_effort_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.198s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/python3.13",
+        "tool.py",
+        "--input",
+        "examples/input.json",
+        "--output",
+        "examples/actual.json",
+        "--expect",
+        "examples/expected.json"
+      ],
+      "cwd": "./tools/uc18",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/python3.13",
+        "test_tool.py",
+        "-v"
+      ],
+      "cwd": "./tools/uc18",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_approved_answer_reduces_backlog (__main__.ToolTests.test_approved_answer_reduces_backlog) ... ok\ntest_cli_example_exit_zero (__main__.ToolTests.test_cli_example_exit_zero) ... ok\ntest_configured_mismatch_exit_one (__main__.ToolTests.test_configured_mismatch_exit_one) ... ok\ntest_deterministic_immutable (__main__.ToolTests.test_deterministic_immutable) ... ok\ntest_frozen_oracles (__main__.ToolTests.test_frozen_oracles) ... ok\ntest_malformed_exit_two (__main__.ToolTests.test_malformed_exit_two) ... ok\ntest_missing_field_exit_two (__main__.ToolTests.test_missing_field_exit_two) ... ok\ntest_negative (__main__.ToolTests.test_negative) ... ok\ntest_oversize_exit_two (__main__.ToolTests.test_oversize_exit_two) ... ok\ntest_positive (__main__.ToolTests.test_positive) ... ok\ntest_requires_all_dependencies (__main__.ToolTests.test_requires_all_dependencies) ... ok\ntest_unknown (__main__.ToolTests.test_unknown) ... ok\ntest_unknown_fields_exit_two (__main__.ToolTests.test_unknown_fields_exit_two) ... ok\ntest_zero_effort_rejected (__main__.ToolTests.test_zero_effort_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.205s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/python3.13",
+        "tool.py",
+        "--input",
+        "examples/input.json",
+        "--output",
+        "examples/actual.json",
+        "--expect",
+        "examples/expected.json"
+      ],
+      "cwd": "./tools/uc18",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": "0f52b1981391eb7971ca0d9f47da09c144d4f7e64245088d5b9fa05edec67af4"
+}

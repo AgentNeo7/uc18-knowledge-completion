@@ -1,0 +1,36 @@
+{
+  "id": "UC18",
+  "name": "Knowledge Completion Studio",
+  "status": "bounded_local_prototype",
+  "scope": "Scenario-dependency question prioritization",
+  "implemented_behavior": "Ranks missing questions by immediate newly resolvable scenarios per declared effort, breaking ties with dependency frequency per effort. Compares a frequency-first baseline under the same budget. Proposed AI answers do not count as approved.",
+  "blockers": [
+    "No document extraction, expert authentication, authoritative publication, measured expert effort, independent holdout or proven advantage. Greedy choices can be suboptimal with complementary questions.",
+    "Original catalog G01\u2013G09 usable-release gates remain unverified. Independent evaluation, domain approval and maintenance owner acceptance absent."
+  ],
+  "source_urls": [
+    "https://www.salesforce.com/agentforce/observability/",
+    "https://docs.langchain.com/langsmith/evaluation"
+  ],
+  "research_decision": "Prior art overlaps. Implement a narrow useful local utility; no novelty or superiority claim.",
+  "gate_decision": "Local synthetic acceptance passed; original full capability and usable-release gates not passed.",
+  "checks": {
+    "command": "/opt/homebrew/bin/python3.13 test_tool.py -v",
+    "unit_test_count": 14,
+    "outcome": "passed",
+    "original_frozen_cases": 3,
+    "negative_exit_semantics": "0 completed analysis; 1 configured oracle mismatch; 2 invalid input; none proves safety",
+    "raw_log": "checks.json"
+  },
+  "evidence_class": "simulated",
+  "authorship": {
+    "implementation_and_fixtures": "AI-generated during authorized execution; internal AI checks only",
+    "Balaji_contributions": "Directed portfolio scope, local execution and publication policy. No implementation authorship or independent review attributed."
+  },
+  "license_status": "pending parent license application; original code, no third-party source copied",
+  "publication_policy": "eligible only for scoped prototype packaging after parent checks and license, not a full production release",
+  "next_task": "No independent scenario labels or owner approval.",
+  "license": "MIT for original code; upstream documentation retains its own terms",
+  "source_publication": "Authorized experimental source preview; full catalog release gates not met",
+  "full_requirements_complete": false
+}
