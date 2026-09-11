@@ -1,0 +1,59 @@
+{
+  "id": "UC18",
+  "name": "Knowledge Completion",
+  "platform": "Salesforce",
+  "scope": "Case-derived Knowledge gap draft outline for review; no article publication or claim of corpus completeness.",
+  "status": "scoped_native_validated",
+  "publication": "scoped_source_preview_eligible",
+  "requirements": [
+    {
+      "id": "UC18-R01",
+      "acceptance": "The model distinguishes absent knowledge from unsupported tasks.",
+      "coverage": "Native Case Subject/Reason produces question/category hypothesis for Knowledge owner review.",
+      "blocker": "Process-owner outcome/fact scenario model absent."
+    },
+    {
+      "id": "UC18-R02",
+      "acceptance": "Questions cite the specific scenarios and evidence gap they address.",
+      "coverage": "Case-based draft question cites a scoped Case record reference and category hypothesis.",
+      "blocker": "Scenario-specific evidence gaps and authoritative Knowledge corpus access not implemented."
+    },
+    {
+      "id": "UC18-R03",
+      "acceptance": "Ranking is compared with frequency-first and manual baselines.",
+      "coverage": "No automatic question ranking claimed; outlines preserve source Case links for manual review.",
+      "blocker": "Frequency-first/manual benchmark and question prioritization not implemented."
+    },
+    {
+      "id": "UC18-R04",
+      "acceptance": "A proposed model answer cannot publish itself as authoritative policy.",
+      "coverage": "Invocable returns draft-only outline; no generated answer, Knowledge DML or publication path.",
+      "blocker": "Approved-answer capture and authenticated Knowledge-owner workflow absent."
+    },
+    {
+      "id": "UC18-R05",
+      "acceptance": "Benefits reflect newly resolvable work rather than number of articles created.",
+      "coverage": "Native tests specify draft state, no DML and unknown Case.",
+      "blocker": "Independent knowledge owner/user validation and downstream outcome comparison absent."
+    }
+  ],
+  "blockers": [
+    "Scoped metadata compilation and unit tests passed; broader integration, denied-user scenarios, actual domain policies and independent evaluation remain incomplete.",
+    "Original acceptance requirements remain partial; owner validation, comparative benchmarks and independent evidence pending."
+  ],
+  "native_tests": [
+    "KnowledgeGapDraftActionTest"
+  ],
+  "commands": [
+    "npm test",
+    "sf project deploy start --dry-run --target-org eb1a-dev --manifest manifest/package.xml --test-level RunSpecifiedTests --tests KnowledgeGapDraftActionTest"
+  ],
+  "full_acceptance_complete": false,
+  "native_validation": {
+    "status": "passed",
+    "mode": "dry-run",
+    "tests_completed": 2,
+    "persisted_deployment": false,
+    "scope": "one Developer org; scoped unit tests and supplied metadata only"
+  }
+}

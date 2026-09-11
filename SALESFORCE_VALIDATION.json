@@ -1,0 +1,13 @@
+{
+  "platform": "Salesforce",
+  "targetApi": "64.0",
+  "nativeDryRun": "passed",
+  "nativeTestsCompleted": 2,
+  "nativeTestErrors": 0,
+  "nativeTestClasses": [
+    "KnowledgeGapDraftActionTest"
+  ],
+  "deploymentPersisted": false,
+  "evidence_status": "observed",
+  "fullAcceptanceComplete": false
+}
